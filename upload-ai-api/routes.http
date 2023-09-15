@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "NLW AI, inteligencia artificial"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "5c5b6990-f277-4946-9a99-6157276d03a2",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
